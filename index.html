@@ -11,15 +11,266 @@
   
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/jquery.jscrollpane.css">
   <script src="js/libs/jquery-3.2.1.min.js"></script>
   <script src="js/scripts.js"></script>
-
+  <script src="js/libs/ResizeSensor.js"></script>
+  <script src="js/libs/ElementQueries.js"></script>
+  <script src="js/libs/jquery.mousewheel.js"></script>
+  <script src="js/libs/jquery.jscrollpane.min.js"></script>
+  <script src="js/libs/jquery-ui.min.js"></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
+<div class="container">
+    <header>
+        <div id="header">
+            <ul id="menu">
+                <li class="menu-first">Connect</li>
+                <li>Add</li>
+                <li>Copy</li>
+                <li class="menu-last">Delete</li>
+            </ul> 
+        </div>
+        <div class="menu-open">
+            <i class="menu-closeopen fa fa-fw fa-2x fa-angle-double-down" aria-hidden="true"></i>
+            <i class="menu-closeopen fa fa-fw fa-2x fa-angle-double-up hide" aria-hidden="true"></i>
+        </div>
+    </header>
+  
+    <nav>
+        <div class="sidebarContainer">
+            <div id="sidebarContainer">
+                <div id="ElementsTable" class="Table TableSimple">
+                    <div class="TableBody">
+                        <div class="TableHeader TableRow">
+                            <div class="TableCell TableCellHeader col1">ID</div>
+                            <div class="TableCell TableCellHeader col2">Name</div>
+                            <div class="TableCell TableCellHeader col3">dupa dupa;</div>
+                            <div class="TableCell TableCellHeader col4 TableCellHeaderLast">Position X</div>
+                        </div>
+                        <div class="TableContent">
+                        <div class="TableRow TableSelected">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2">aaaaaaaaaaaaa</div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2">DUPAAAA</div>
+                            <div class="TableCell col3">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div>
+                        <div class="TableRow">
+                            <div class="TableCell col1" >1</div>
+                            <div class="TableCell TableCellName col2"></div>
+                            <div class="TableCell col3">&nbsp;</div>
+                            <div class="TableCell TableCellLast col4">&nbsp;</div>
+                        </div></div>
+                    </div>
+                </div>
+                
 
+                <div id="ElementsOpen">
+                    <div class="elements-open">
+                        <i ID="elementsCloseBtn" class="menu-closeopen elementsShowHide fa fa-fw fa-2x fa-angle-double-left hide" aria-hidden="true"></i>
+                        <i ID="elementsOpenBtn" class="menu-closeopen elementsShowHide fa fa-fw fa-2x fa-angle-double-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+                             
+    </nav>
+  
+    <main>
+      <!-- Main content -->
+    </main>
+  
+    <aside>
+      <!-- Sidebar / Ads -->
+    </aside>
+  
+    <footer>
+      <!-- Footer content -->
+    </footer>
+  </div>
+<!--
 <body class="holy-grail">
     <header id="headerContainer" class="holy-grail__header">
         <div id="header">
@@ -54,6 +305,6 @@
     </div>
     <footer class="holy-grail__footer"></footer>
 </body>
-
+-->
 
 </html>
