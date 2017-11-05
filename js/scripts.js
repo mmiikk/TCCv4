@@ -16,10 +16,14 @@ $(window).on('load', function() {
     jQuery.showOnlyFirstNColumns(2,"ElementsTable");
     resizeTableCells("ElementsTable");
     console.log($("#sidebarContainer"));
-    $("#sidebarContainer").resizable({
+    $("#ElementsTable").resizable({
         handleSelector: ".splitter",
         resizeHeight: false
       });
+
+      $("#ElementsTable").on( "resize", function( event, ui ) {
+        resizeTableCells("ElementsTable");
+      } );
    // $("#sidebarContainer").resizable({ handles: 'e' });
 });
 

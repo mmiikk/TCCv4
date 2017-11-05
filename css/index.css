@@ -35,13 +35,13 @@ Holy Grail
 */
 .container {
 display: grid;
-
+justify-content: space-between;
 grid-template-areas:
     "header header header"
     "nav content side"
     "footer footer footer";
 
-grid-template-columns: 200px 1fr 200px;
+/*grid-template-columns: 200px 1fr 200px;*/
 grid-template-rows: auto 1fr auto;
 
 
@@ -127,13 +127,6 @@ grid-area: footer;
 Sidebar Left
 */
 
-.splitter {
-    flex: 0 0 auto;
-    width: 18px;  
-    background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #535353;
-    min-height: 200px;
-    cursor: col-resize;  
-  }
 #sidebarLeft{
     box-sizing: border-box; 
     align-items: stretch;
@@ -146,7 +139,9 @@ Sidebar Left
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap
+    
 }
+
 .sidebarContainer{
     position:relative;
     
@@ -160,7 +155,7 @@ Sidebar Left
     flex-basis: auto
 }
 #ElementsOpen{
-    order: 2;
+    order: 3;
     flex-basis: auto;
     max-height:56px;
 }
@@ -217,4 +212,24 @@ Sidebar Left
 
 .elements-open{
     cursor: pointer;
+}
+
+
+/*
+Aside Left
+*/
+
+#sidebarRight{
+    box-sizing: border-box; 
+    align-items: stretch;
+    height: 100%;
+    flex: 1 100%;
+    flex-flow: row wrap;
+}
+#asideContainer{
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap
+    
 }
