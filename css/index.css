@@ -233,3 +233,23 @@ Aside Left
     flex-wrap: nowrap
     
 }
+#ElementParameters{
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    border-right: 0;
+    border-top: 0;
+    padding: 5px 5px;
+    box-sizing:border-box;
+    order: 2;
+    background: #f5f7f8;
+    padding:10px;
+    align-self:stretch;
+    flex-basis: auto;
+    width:100%;
+}
+#ParametersOpen{
+    order: 1;
+    flex-basis: auto;
+    max-height:56px;
+}
+
