@@ -17,8 +17,9 @@ $(window).on('load', function() {
     resizeTableCells("ElementsTable");
     console.log($("#sidebarContainer"));
     $("#ElementsTable").resizable({
-        handleSelector: ".splitter",
-        resizeHeight: false
+       // handleSelector: ".splitter",
+        resizeHeight: false,
+        handle: "e"
       });
 
       $("#ElementsTable").on( "resize", function( event, ui ) {
